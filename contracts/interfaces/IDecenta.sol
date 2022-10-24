@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-interface IOpswap {
+interface IDecenta {
 
     struct FloorToken {
         address _token;
