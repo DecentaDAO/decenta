@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: UNLICENSE
 pragma solidity ^0.8.0;
 
-import {IOpswap} from "./interfaces/IOpswap.sol";
+import {IDecenta} from "./interfaces/IDecenta.sol";
 import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {Counters} from "@openzeppelin/contracts/utils/Counters.sol";
 import {IERC721Receiver} from "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 
-contract Opswap is IOpswap, IERC721Receiver{
+contract Decenta is IDecenta, IERC721Receiver{
 
     using Counters for Counters.Counter;
 
