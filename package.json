@@ -1,0 +1,39 @@
+{
+  "name": "opswap-v0-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "check:solidity": "yarn solhint 'contracts/**/*.sol'",
+    "formatting:solidity": "yarn prettier 'contracts/**/*.sol' --write",
+    "coverage": "yarn hardhat coverage --solcoverjs .solcover.ts",
+    "deploy:bsctest": "yarn hardhat deploy --network bsctest --write true"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.7.1",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.6.0",
+    "chai": "^4.3.6",
+    "chai-ethers": "^0.0.1",
+    "dotenv": "^16.0.1",
+    "ethereum-waffle": "4.0.0-alpha.19",
+    "ethers": "^5.6.9",
+    "hardhat": "^2.10.1",
+    "hardhat-contract-sizer": "^2.6.1",
+    "hardhat-deploy": "^0.11.11",
+    "hardhat-deploy-ethers": "^0.3.0-beta.13",
+    "hardhat-gas-reporter": "^1.0.8",
+    "mocha": "^10.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-dev.23",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5",
+    "solidity-coverage": "^0.7.21",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^4.7.4"
+  }
+}
